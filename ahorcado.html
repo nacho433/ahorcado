@@ -35,7 +35,7 @@
         soloLetras(letra.value, palabrAdivinar);
     };
 
-    function ingresarPalabra(){
+    function ingresarPalabra(){      // es la alerta para ingresar una palabrsa
         const palabra = prompt("Ingresa una palabra para adivinar!");
         const arrPalabra = palabra.split("");
         console.log(arrPalabra);
@@ -49,7 +49,7 @@
         return arrPalabra;
     };
 
-    function creaTablero(arrPalabra){
+    function creaTablero(arrPalabra){        //crear tablero
         let tablero = "";
         arrPalabra.forEach(letra => {
             tablero = tablero + "<td> ? </td>";
